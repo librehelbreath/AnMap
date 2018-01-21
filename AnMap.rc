@@ -1,0 +1,579 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""AnMap.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "AnMap.ico"
+IDR_ANMAPTYPE           ICON    DISCARDABLE     "AnMapDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_TOOL_CHECK_BLANK
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_VIEW_RENDER
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New File...\tCtrl+N",        ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Tool Bar",                   ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Show &Tree\tCtrl+T",          ID_VIEW_TREE
+        MENUITEM "Show &Grid\tAlt+G",           ID_VIEW_GRID
+        MENUITEM "Pre&View\tAlt+R",             ID_VIEW_RENDER
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Check &Blank\tCtrl+F",        ID_TOOL_CHECK_BLANK
+        MENUITEM "&Options...",                 ID_TOOL_OPTION
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "About AnMap(&A)...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_MOVE_LEFT,           VIRTKEY, SHIFT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_MOVE_RIGHT,          VIRTKEY, SHIFT, NOINVERT
+    "F",            ID_TOOL_CHECK_BLANK,    VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_VIEW_GRID,           VIRTKEY, ALT, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_MOVE_DOWN,           VIRTKEY, SHIFT, NOINVERT
+    "T",            ID_VIEW_TREE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_VIEW_RENDER,         VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "W",            ID_MOVE_UP,             VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_REDO,           VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 215, 59
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About AnMap"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "AnMap Version 1.0",IDC_STATIC,40,10,73,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) by AnSangha",IDC_STATIC,40,24,92,8
+    DEFPUSHBUTTON   "OK",IDOK,157,7,50,15,WS_GROUP
+    LTEXT           "2002.09.08~2002.11.25",IDC_STATIC,40,38,79,8
+END
+
+IDD_DIALOG_PROPERTIES DIALOGEX 0, 0, 125, 152
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTERMOUSE | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "Tile Properties"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,14,124,40,12
+    PUSHBUTTON      "Cancel",IDCANCEL,71,124,40,12
+    CONTROL         "Moveable",IDC_CHECK_MOVE,"Button",BS_AUTO3STATE | 
+                    WS_TABSTOP,41,75,43,10
+    CONTROL         "Teleport",IDC_CHECK_TELEPORT,"Button",BS_AUTO3STATE | 
+                    WS_TABSTOP,41,90,43,10
+    LTEXT           "Sprite",IDC_STATIC,39,15,19,8
+    LTEXT           "Sprite Frame",IDC_STATIC,17,30,42,8
+    LTEXT           "Object",IDC_STATIC,37,45,21,8
+    LTEXT           "Object Frame",IDC_STATIC,15,60,43,8
+    EDITTEXT        IDC_EDIT_SPRITE,67,13,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SPRITE_FRAME,67,28,40,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_OBJECT,67,43,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_OBJECT_FRAME,67,58,40,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "",IDC_STATIC_XY,8,8,28,8
+    CONTROL         "Farm",IDC_CHECK_FARM,"Button",BS_AUTO3STATE | 
+                    WS_TABSTOP,41,105,33,10
+END
+
+IDD_DIALOG_NEWMAP DIALOG DISCARDABLE  0, 0, 179, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Map"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_MAPSIZEX,50,20,55,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_MAPSIZEY,50,37,55,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,119,14,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,119,31,50,14
+    CONTROL         "Grass",IDC_RADIO_GRASS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,70,51,11
+    CONTROL         "Desert",IDC_DESERT,"Button",BS_AUTORADIOBUTTON,15,85,51,
+                    11
+    CONTROL         "Dry Desert",IDC_RADIO_DRYDESERT,"Button",
+                    BS_AUTORADIOBUTTON,15,100,51,11
+    CONTROL         "Waste Land",IDC_RADIO_WASTELAND,"Button",
+                    BS_AUTORADIOBUTTON,15,115,51,11
+    CONTROL         "Stone",IDC_RADIO_STONE,"Button",BS_AUTORADIOBUTTON,15,
+                    130,39,11
+    CONTROL         "Ice",IDC_RADIO_ICE,"Button",BS_AUTORADIOBUTTON,70,70,41,
+                    11
+    CONTROL         "Water",IDC_RADIO_WATER,"Button",BS_AUTORADIOBUTTON,70,
+                    85,41,11
+    CONTROL         "Rock",IDC_RADIO_ROCK,"Button",BS_AUTORADIOBUTTON,70,100,
+                    39,11
+    CONTROL         "Dungeon",IDC_RADIO_DUNGEON,"Button",BS_AUTORADIOBUTTON,
+                    70,115,40,11
+    CONTROL         "Pebble",IDC_RADIO_PEBBLE,"Button",BS_AUTORADIOBUTTON,70,
+                    130,40,11
+    CONTROL         "Tower of Hell",IDC_RADIO_TOH,"Button",
+                    BS_AUTORADIOBUTTON,115,70,54,11
+    CONTROL         "Snow",IDC_RADIO_SNOW,"Button",BS_AUTORADIOBUTTON,115,85,
+                    51,11
+    CONTROL         "Frigus",IDC_RADIO_FRIGUS,"Button",BS_AUTORADIOBUTTON,
+                    115,100,51,11
+    CONTROL         "Volcano1",IDC_RADIO_VOLCANO1,"Button",
+                    BS_AUTORADIOBUTTON,115,114,51,11
+    CONTROL         "Volcano2",IDC_RADIO_VOLCANO2,"Button",
+                    BS_AUTORADIOBUTTON,115,128,51,11
+    GROUPBOX        "Map Size",IDC_STATIC,9,6,106,49
+    CTEXT           "Width",IDC_STATIC,14,21,35,8
+    CTEXT           "Height",IDC_STATIC,14,38,35,8
+    GROUPBOX        "Default Terrain",IDC_STATIC,9,58,162,88
+END
+
+IDD_DIALOG_RENDER DIALOG DISCARDABLE  0, 0, 325, 352
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preview"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "Preview",IDC_BUTTON_RENDER,162,2,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Save as File",IDC_BUTTON_SAVE,272,2,50,12
+    EDITTEXT        IDC_EDIT_OUTPUTSIZE,62,2,30,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Output Size :",IDC_STATIC,14,4,44,8
+    LTEXT           "",IDC_STATIC_RATIO,96,4,63,8
+    CONTROL         "Progress1",IDC_PROGRESS_JOB,"msctls_progress32",
+                    WS_BORDER,2,340,321,6
+    PUSHBUTTON      "Print Map",IDC_BUTTON_PRINT,217,2,50,12
+END
+
+IDD_DIALOG_OPTION DIALOG DISCARDABLE  0, 0, 232, 124
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Option"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,113,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,103,50,14
+    GROUPBOX        "Auto Save",IDC_STATIC,12,9,209,25
+    CONTROL         "Save automatically when you are away for",
+                    IDC_CHECK_AUTOSAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    17,20,147,8
+    EDITTEXT        IDC_EDIT_AUTOSAVETIME,167,19,18,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "minutes.",IDC_STATIC,188,20,28,8
+    GROUPBOX        "Brush Cursor Twinkle",IDC_STATIC,12,39,209,25
+    CONTROL         "Brush Cursor Twinkle every",IDC_CHECK_CURSOR_TWINKLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,50,100,8
+    EDITTEXT        IDC_EDIT_CURSOR_TWINKLE,119,48,23,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "milli seconds.",IDC_STATIC,145,50,46,8
+    GROUPBOX        "Scroll Delay",IDC_STATIC,12,69,209,25
+    LTEXT           "Screen scrolls by mouse move with delay",IDC_STATIC,17,
+                    79,137,9
+    LTEXT           "milli seconds",IDC_STATIC,174,79,44,9
+    EDITTEXT        IDC_EDIT_SCROLL_DELAY,155,78,18,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_SPLASH DIALOG DISCARDABLE  0, 0, 160, 89
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,21,32,20,20
+    LTEXT           "AnMap Version 1.0",IDC_STATIC,54,13,76,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) by AnSangha",IDC_STATIC,54,27,88,9
+    LTEXT           "2002.09.08~2002.12.11",IDC_STATIC,54,41,75,8
+    LTEXT           "하동수 (주)시멘텍",IDC_STATIC,54,69,95,8
+    LTEXT           "This product is licensed to...",IDC_STATIC,54,55,93,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AnMap Helbreath MapEditor\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "AnMap\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AnMap.EXE\0"
+            VALUE "ProductName", "AnMap Helbreath MapEditor\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_DIALOG_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_DIALOG_NEWMAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_DIALOG_RENDER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 324
+        BOTTOMMARGIN, 351
+    END
+
+    IDD_DIALOG_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "AnMap\n\nAnMap\n\n\nAnMap.Document\nAnMap Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "AnMap"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Make New Map\nNew File"
+    ID_FILE_OPEN            "Open Map\nOpen"
+    ID_FILE_CLOSE           "Close Map\nExit"
+    ID_FILE_SAVE            "Save Current Map\nSave"
+    ID_FILE_SAVE_AS         "Save Current Map As ...\nSave As..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Help About AnMap\nInfo"
+    ID_APP_EXIT             "응용 프로그램을 종료하기 위해 문서를 저장할 것인지 묻습니다\n종료"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다\n이전 창"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "현재 열린 창을 나눕니다\n나누기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 부분을 지웁니다\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다\n모두 지우기"
+    ID_EDIT_FIND            "지정한 문자열을 찾습니다\n찾기"
+    ID_EDIT_REPEAT          "마지막으로 실행한 동작을 반복합니다\n반복"
+    ID_EDIT_REPLACE         "지정한 문자열을 다른 문자열로 바꿉니다\n바꾸기"
+    ID_EDIT_SELECT_ALL      "문서 전체를 선택합니다\n전체 선택"
+    ID_EDIT_UNDO            "마지막으로 한 동작을 취소합니다\n실행 취소"
+    ID_EDIT_REDO            "이전에 취소한 동작을 다시 수행합니다\n다시 실행"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 보이거나 감춥니다\n도구 모음 전환"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 감춥니다\n상태 표시줄 전환"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창의 크기를 변경합니다"
+    AFX_IDS_SCMOVE          "창의 위치를 변경합니다"
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 줄여서 표시합니다"
+    AFX_IDS_SCMAXIMIZE      "창을 최대 크기로 확장합니다"
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다"
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다"
+    AFX_IDS_SCCLOSE         "현재 열린 창을 닫고 문서를 저장할 것인지를 묻습니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 원래 크기로 복원합니다"
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다\n미리 보기 취소"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_GRID            "Show Grid\nGrid"
+    ID_VIEW_TREE            "Show Tree\nTree"
+    ID_VIEW_RENDER          "Preview Map\nPreview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOL_OPTION          "Decide your option\nOption"
+    ID_TOOL_CHECK_BLANK     "Check Blank Space\nCheck Blank Space"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "AnMap.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
